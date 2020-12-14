@@ -1,0 +1,218 @@
+video-container {
+  position: relative;
+}
+video-container #overlay {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+video-container #header-video {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+video-container #header-video .wallpaperWidth {
+  width: 100%;
+}
+video-container #header-video .wallpaperHeight {
+  height: 100%;
+}
+
+navigation-container {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 50px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  width: 100%;
+  max-width: 852px;
+  min-width: 280px;
+  display: block;
+  transition: all 0.3s ease;
+  text-align: center;
+  z-index: 80;
+}
+navigation-container h3 {
+  color: white;
+  font-family: "din-next-pro", sans-serif;
+}
+navigation-container #content-navigation {
+  width: auto;
+  display: inline-block;
+}
+navigation-container #content-navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+navigation-container #content-navigation ul li {
+  list-style: none;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+navigation-container #content-navigation ul li .icon {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+navigation-container #content-navigation ul li .icon.call-in, navigation-container #content-navigation ul li .icon.call-out {
+  cursor: pointer;
+}
+navigation-container #content-navigation ul li .icon:first-child {
+  margin-right: 40px;
+}
+navigation-container #content-navigation ul li .icon.hide {
+  display: none;
+}
+navigation-container #content-navigation ul li .icon.locked {
+  opacity: 0.3;
+}
+navigation-container #content-navigation ul li .icon.animated {
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+navigation-container #content-navigation ul li .icon.bounceIn {
+  animation-name: bounceIn;
+}
+navigation-container #content-navigation ul li .icon img {
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (max-width: 812px) {
+  navigation-container #content-navigation ul li {
+    padding: 12px;
+  }
+  navigation-container #content-navigation ul li .icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+  }
+  navigation-container #content-navigation ul li .icon:first-child {
+    margin-right: 30px;
+  }
+  navigation-container #content-navigation ul li .icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 812px) and (orientation: landscape) {
+  navigation-container {
+    bottom: 30px;
+  }
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 90;
+}
+footer-container ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  margin-right: 20px;
+}
+footer-container ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  font-family: "din-next-pro";
+  font-size: 0.8em;
+}
+footer-container ul li a:link, footer-container ul li a:visited, footer-container ul li a:hover, footer-container ul li a:active {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 812px) {
+  footer-container {
+    height: 40px;
+  }
+  footer-container ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-right: 0;
+  }
+  footer-container ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    font-family: "din-next-pro";
+    font-size: 0.7em;
+  }
+  footer-container ul li a:link, footer-container ul li a:visited, footer-container ul li a:hover, footer-container ul li a:active {
+    text-decoration: none;
+    color: white;
+  }
+}
+logo-container #logo img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 812px) {
+  logo-container #logo img {
+    width: 40px;
+    height: 40px;
+  }
+}
+intro-container #intro {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;
+}
+
+@font-face {
+  font-family: "din-next-pro";
+  src: url("../fonts/36B897_B_0.eot");
+  src: url("../fonts/36B897_B_0.eot?#iefix") format("embedded-opentype"), url("../fonts/36B897_B_0.woff2") format("woff2"), url("../fonts/36B897_B_0.woff") format("woff"), url("../fonts/f36B897_B_0.ttf") format("truetype");
+  font-weight: normal;
+}
+body {
+  margin: 0;
+  font-family: "din-next-pro";
+  background-color: black;
+}
+
+/*# sourceMappingURL=main.css.map */
