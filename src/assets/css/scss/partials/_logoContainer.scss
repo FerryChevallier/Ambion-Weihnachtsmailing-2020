@@ -1,0 +1,25 @@
+@import 'variables';
+
+logo-container {
+  #logo {
+    img {
+      position:absolute;
+      width: 60px;
+      height: 60px;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  logo-container {
+    #logo {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

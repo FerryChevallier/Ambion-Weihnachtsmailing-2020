@@ -1,0 +1,30 @@
+@import 'variables';
+
+video-container {
+  position: relative;
+
+    
+  #overlay {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+  }
+
+  #header-video {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .wallpaperWidth {
+      width: 100%;
+    }
+
+    .wallpaperHeight {
+      height: 100%;
+    }
+  }
+}

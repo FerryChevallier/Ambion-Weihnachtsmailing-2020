@@ -1,0 +1,22 @@
+@import 'partials/videoContainer';
+@import 'partials/navigationContainer';
+@import 'partials/footerContainer';
+@import 'partials/logoContainer';
+@import 'partials/introContainer';
+@import 'partials/variables';
+
+@font-face{
+	font-family: 'din-next-pro';
+	src: url('../fonts/36B897_B_0.eot');
+	src: url('../fonts/36B897_B_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/36B897_B_0.woff2') format('woff2'),
+		url('../fonts/36B897_B_0.woff') format('woff'),
+		url('../fonts/f36B897_B_0.ttf') format('truetype');
+	font-weight: normal;
+}
+
+body {
+  margin: 0;
+	font-family: $font;
+	background-color: black;
+};
